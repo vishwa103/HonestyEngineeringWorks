@@ -234,6 +234,7 @@ body {
   overflow: hidden; /* Ensures no overflow */
 }
 
+
 .hero-image {
   position: absolute;
   border-radius: 10px;

@@ -4,6 +4,7 @@ import logo from '../assets/logo.svg';
 import { LuArrowRightCircle } from "react-icons/lu";
 import { Link } from 'react-router-dom';
 
+
 const Header = () => {
   const handleChange = () => {
     window.scrollTo({

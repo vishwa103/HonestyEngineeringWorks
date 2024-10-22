@@ -1,6 +1,8 @@
 import React from 'react'
 import AboutUsImageOne from '../assets/AboutUsImageOne.png';
 import AboutUsImageTwo from '../assets/AboutUsImageTwo.png';
+import { motion } from 'framer-motion';
+
 
 const aboutUsData = [
   {
@@ -43,8 +45,13 @@ const AboutUsSection = () => {
         <div className='section-title'>About Us</div>
       </div>
       <div className='row'>
-        <div className='col-md-7'>
-          <img
+        <div className='col-md-7' style={{overflow:"hidden"}}>
+
+          <motion.img
+          
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{ duration: 2 }}
             src={AboutUsImageOne}
             alt="AboutUsImageOne"
             width="100%"
